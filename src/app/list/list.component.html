@@ -1,0 +1,23 @@
+
+<h2> Routing to component that are reused by router. The component does not subscribe to params changes and it displays stale data.</h2>
+<ul>
+  <li><a routerLink="/detail-stale/1">Detail Stale 1</a></li>
+  <li><a routerLink="/detail-stale/2">Detail Stale 2</a></li>
+</ul>
+
+
+<h2> Routing to component that are reused by router. The component susbscribes to params changes and its displays correct data.</h2>
+<ul>
+  <li><a routerLink="/detail-reusable/1">Detail Reusable 1</a></li>
+  <li><a routerLink="/detail-reusable/2">Detail Reusable 2</a></li>
+</ul>
+
+<h2> Routing to component that is not reused by router. The component does not subscribe to params changes and displays correct data.</h2>
+<ul>
+  <li><a routerLink="/detail-same/1">Detail Same 1</a></li>
+  <li><a routerLink="/detail-same/2">Detail Same 2</a></li>
+</ul>
+
+<hr>
+<h2>Here is detail view</h2>
+<router-outlet></router-outlet>
